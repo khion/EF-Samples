@@ -5,7 +5,7 @@ pipeline {
 			stages {
 				stage('Source'){
 					steps{
-						checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '49ffb0e5-9260-42e9-830a-02cdf30b134d', url: 'https://github.com/khion/EF-Samples.git']]])
+						checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '49ffb0e5-9260-42e9-830a-02cdf30b134d', url: 'https://github.com/khion/EF-Samples']]])
 					}
 				}
 				stage('Build') {
